@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-elements {
+    .row-cols-6 {
+        .col {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            a {
+                img {
+                    width: 120px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.sec-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-info-container {
+  width: 86%;
+  height: auto;
+}
+.sec-info-container .sec-info-head {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.sec-info-container .sec-info-carts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.sec-info-container .sec-info-carts .sec-info-carts-cart {
+  width: 48%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.sec-info-container .sec-info-carts .sec-info-carts-cart .cart-text button {
+  border: none;
+  background-color: #fff;
+  color: #554a4a;
+  font-weight: 700;
+}
+.sec-info-container .sec-info-carts .sec-info-carts-cart .cart-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.sec-statistics {
+  width: 100%;
+  height: 500px;
+  padding-top: 30px;
+}
+.sec-statistics-container {
+  position: relative;
+}
+.sec-statistics-container .sec-img img {
+  width: 100%;
+  height: auto;
+}
+.sec-statistics-container .sec-content-box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(12, 12, 12, 0.53);
+  color: #fff;
+  gap: 100px;
+}
+.sec-statistics-container .sec-content-box .content-head {
+  width: 65%;
+  height: auto;
+}
+.sec-statistics-container .sec-content-box .content-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.sec-statistics-container .sec-content-box .content-body-item {
+  width: 250px;
+  height: 200px;
+}
+.sec-statistics-container .sec-content-box .content-body-item span {
+  font-size: 60px;
+  font-weight: 700;
+}
+.sec-statistics-container .sec-content-box .content-body-item p {
+  font-size: 30px;
+}

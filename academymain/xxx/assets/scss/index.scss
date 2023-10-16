@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container-fluid {
+    max-width: 1390px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+.carousel-item {
+    height: 800px;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+#carouselExampleIndicators {
+    position: relative;
+}
+
+.logo-in-slider {
+    position: absolute;
+    z-index: 1;
+    left: 3%;
+    padding: 5px;
+}
+
+.nav-in-slider {
+    position: absolute;
+    left: 36%;
+    z-index: 1;
+
+    .ul {
+        display: flex;
+        gap: 50px;
+
+        .li {
+            font-family: 'Visby Regular';
+            font-weight: 600;
+            color: #fff;
+            font-size: 14px;
+            padding: 18px 0;
+            position: relative;
+
+            .nav-dropdown {
+                display: none;
+                position: absolute;
+                width: 250px;
+                top: 47px;
+                left: -36px;
+                transition: all 0.7s;
+                opacity: 0;
+
+                // padding: 0px 0;
+                li {
+                    color: #000;
+                    background-color: #fff;
+                    padding: 15px 27px;
+                }
+
+                li:hover {
+                    background-color: #faf8f8;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .li:hover {
+            cursor: pointer;
+        }
+
+        .li:hover .nav-dropdown {
+            display: block;
+            opacity: 1;
+        }
+
+        .li::after {
+            content: "";
+            display: block;
+            width: 50%;
+            background-color: #F9DD00;
+            height: 3px;
+            transition: 0.5s;
+            position: absolute;
+            left: 27%;
+            bottom: 10px;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        .li:hover::after {
+
+            opacity: 1;
+            transform: scaleX(2.3);
+            cursor: pointer;
+        }
+    }
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    right: 0;
+}
+
+#section2 .slide-two-header {
+    text-align: center !important;
+}
+
+@font-face {
+    font-family: 'Visby Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Regular'), url("../font/VisbyRegular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Visby Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Bold'), url("../font/VisbyBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Visby Extrabold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Extrabold'), url("../font/VisbyExtrabold.woff") format('woff');
+}
+
+.section2 {
+    padding: 60px 0;
+    // background-color: #c0b6b6;
+
+    .contanier_slide {
+        width: 1140px;
+        margin: 0 auto;
+
+        .carousel-item {
+            height: 300px;
+            // background-color: red;
+        }
+    }
+}
+
+.section2 {
+    position: relative;
+
+    .slide-two-header {
+        text-align: center;
+        font-size: 50px !important;
+        font-family: 'Visby Regular';
+        span{
+            font-family:'Visby Extrabold' ;
+
+        }
+    }
+
+    .text_3_cnt p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #4a4a4a;
+        font-family: 'Visby Italic';
+        padding-bottom: 10px;
+    }
+
+    .txt_ctn_1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text_ctn4 {
+            padding-left: 20px;
+            justify-content: flex-start;
+
+            h5 {
+                font-family: 'Visby Extrabold' !important;
+                color: #4a4a4a;
+                font-size: 21px !important;
+                font-weight: 600 !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                color: #8f8f8f;
+            }
+        }
+
+        .txt_ctn_img {
+            border: 0;
+
+            img {
+                width: 100px !important;
+                height: 100px !important;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+.carousel-indicators {
+    margin-bottom: 0px !important;
+}

@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.container nav .navnone1 {
+  display: none;
+}
+.container nav .navnone2 {
+  display: none;
+}
+@media screen and (min-width: 300px) and (max-width: 990px) {
+  .container nav .nav1 {
+    display: none;
+  }
+  .container nav .nav2 {
+    display: none;
+  }
+  .container nav .nav3 {
+    display: none;
+  }
+  .container nav .nav4 {
+    display: none;
+  }
+  .container nav .navnone1 {
+    display: block;
+    width: 45%;
+    height: auto;
+  }
+  .container nav .navnone1 img {
+    width: 75%;
+    height: 50%;
+  }
+  .container nav .navnone2 {
+    display: block;
+    width: 55%;
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+  .container nav .navnone2 i {
+    font-size: 30px;
+  }
+}
+.container .nav1 {
+  width: 40%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .nav2 {
+  width: 35%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container .nav3 {
+  width: 7%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .nav4 {
+  width: 15%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 40px;
+}
+.container .nav4 button {
+  background-color: #F9dd00;
+  width: 250px;
+  height: 70px;
+}
+.container .section2 {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  gap: 70px;
+}
+.container .section2 .section2-1 {
+  width: 35%;
+  height: auto;
+}
+.container .section2 .section2-1 .tedris {
+  font-weight: 1000;
+  font-size: 60px;
+  color: rgb(75, 74, 74);
+}
+.container .section2 .section2-2 {
+  width: 65%;
+  height: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .section2 .section2-2 .section2-2-1:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: rgb(157, 68, 240);
+  color: white;
+}
+.container .section2 .section2-2 .section2-2-2:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: rgb(238, 238, 11);
+  color: white;
+}
+.container .section2 .section2-2 .section2-2-3:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: rgb(11, 215, 11);
+  color: white;
+}
+.container .section2 .section2-2 .section2-2-4:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: rgb(38, 80, 203);
+  color: white;
+}
+.container .section2 .section2-2 .section2-2-1 {
+  width: 36%;
+  height: 50%;
+  border: 0.1px solid gray;
+}
+.container .section2 .section2-2 .section2-2-1 .section2-2-1-2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: end;
+}
+.container .section2 .section2-2 .section2-2-2 {
+  width: 36%;
+  height: 50%;
+  border: 0.1px solid gray;
+}
+.container .section2 .section2-2 .section2-2-2 .section2-2-2-2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: end;
+}
+.container .section2 .section2-2 .section2-2-3 {
+  width: 36%;
+  height: 50%;
+  border: 0.1px solid gray;
+}
+.container .section2 .section2-2 .section2-2-3 .section2-2-3-2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: end;
+}
+.container .section2 .section2-2 .section2-2-4 {
+  width: 36%;
+  height: 50%;
+  border: 0.1px solid gray;
+}
+.container .section2 .section2-2 .section2-2-4 .section2-2-4-2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: end;
+}
+
+@media screen and (min-width: 300px) and (max-width: 990px) {
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: none;
+  }
+  .nav3 {
+    display: none;
+  }
+  .nav4 {
+    display: none;
+  }
+  .navnone {
+    display: block;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 990px) {
+  .section2-1 {
+    width: 45%;
+  }
+  .section2-2 {
+    width: 45%;
+  }
+  .section2-2-1 {
+    width: 100%;
+  }
+  .section2-2-2 {
+    width: 100%;
+  }
+  .section2-2-3 {
+    width: 100%;
+  }
+  .section2-2-4 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 749px) {
+  .section2-1 {
+    width: 100%;
+  }
+  .section2-2 {
+    width: 100%;
+  }
+}
